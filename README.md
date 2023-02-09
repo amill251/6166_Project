@@ -1,8 +1,8 @@
 # Name of the students in the group.
-Alex Miller - 801072886
-Sarath Chillakuru - 801314925
-Harika Moole - 801318334
-Sri Datta Kiran Avasarala - 801318007
+- Alex Miller - 801072886
+- Sarath Chillakuru - 801314925
+- Harika Moole - 801318334
+- Sri Datta Kiran Avasarala - 801318007
 ---
 ## Introduction about the selected project
 We are going to do a project on 3D human modeling with WebRTC using a Python/Flask server backend and an Android front-end client. Here is a quick example video on Flask and WebRTC from YouTube that we might build off of to aid in our project.
