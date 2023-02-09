@@ -12,7 +12,7 @@ The server code is going to be deployed to a cloud service such as Heroku, AWS, 
 https://github.com/open-mmlab/mmhuman3dLinks
 ## What architecture you intend to use (client-server or standalone mobile application)
 We plan on using a client-server model, with a Python/Flask server and an Android app as the client.
----
+
 ## Project plan based on two weeks iteration.
 ### Week 1:
 1.	Research and gather requirements for the project
