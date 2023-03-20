@@ -50,3 +50,19 @@ We have implemented basic web video application using WebRTC. We have used Agora
 3. Once camera access is allowed , you can see two users on the browser screen communicating over the network.
 4. The signalling process is enabled by the SDK which will enable the video multimedia sessions.
 
+
+#### Iteration 2:
+We have implemented the server component of the web video application using WebRTC. We have switched over to using the kurento library to replace the agora library, as the kurento library has a lot more functionality for editing video streams in real time. We have also implemented package management, using node_modules and webpack for packaging up the client side javascript. 
+
+Some notes for whoever wants to run this project:
+- Install docker desktop and get docker desktop running
+- docker pull kurento/kurento-media-server
+- docker run -d --name kurento-media-server -p 8888:8888 kurento/kurento-media-server
+    - This is the kurento media server that processes the video
+    - Kurento Media Server (KMS) is a multimedia server package that can be used to develop advanced video applications for WebRTC platforms
+- npm install
+- npm start
+- http://localhost:3000/streamer (for streaming video to the server, the video shown is local)
+- http://localhost:3000/viewer (for recieving the video stream from the server, this video is processed)
+
+
