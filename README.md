@@ -64,5 +64,15 @@ Some notes for whoever wants to run this project:
 - npm start
 - http://localhost:3000/streamer (for streaming video to the server, the video shown is local)
 - http://localhost:3000/viewer (for recieving the video stream from the server, this video is processed)
+- Will be looking into the following options to implement a computer vision filter into the video stream:
+    - https://gstreamer.freedesktop.org/documentation/plugin-development/index.html
+    - https://gstreamer.freedesktop.org/documentation/compositor/index.html
+    - https://gstreamer.freedesktop.org/documentation/pango/textoverlay.html
+- This is how we will integrate with mmhuman3d library:
+```
+const filter = await pipeline.create('GStreamerFilter', {
+command: 'python(pyfile=<path_to_custom_script.py>)',
+});
+```
 
 
