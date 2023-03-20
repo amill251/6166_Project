@@ -69,6 +69,7 @@ Some notes for whoever wants to run this project:
     - https://gstreamer.freedesktop.org/documentation/compositor/index.html
     - https://gstreamer.freedesktop.org/documentation/pango/textoverlay.html
 - This is how we will integrate with mmhuman3d library:
+- https://github.com/open-mmlab/mmhuman3d
 ```
 const filter = await pipeline.create('GStreamerFilter', {
 command: 'python(pyfile=<path_to_custom_script.py>)',
