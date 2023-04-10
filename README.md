@@ -76,4 +76,12 @@ command: 'python(pyfile=<path_to_custom_script.py>)',
 });
 ```
 
+#### Iteration 3:
 
+We have integrated a custom python script which contains various video filters like sepia that can be applied on the video application. The filters are applied successfully. We further need to run a model that detects the motion capture in our video application. We weren't succesfful in actually implementing the model this time , but we will ensure a working prototype for our next iteration.
+
+if (message.role === 'streamer') {
+    const filter = await pipeline.create('GStreamerFilter', {  
+      command: 'python3 /path/to/sepia_filter.py'
+      
+    });
