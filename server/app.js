@@ -71,9 +71,16 @@ async function start(ws, message) {
   ws.webRtcEndpoint = webRtcEndpoint;
 
   if (message.role === 'streamer') {
-    const filter = await pipeline.create('GStreamerFilter', {
+    /* const filter = await pipeline.create('GStreamerFilter', {
       command: 'videobalance saturation=0.0',
+    }); */
+
+    const filter = await pipeline.create('GStreamerFilter', {
+      
+      command: '/Users/6166_Project-main/sepia_filter.py',
+      
     });
+    
 
     await webRtcEndpoint.connect(filter);
     streamerWebRtcEndpoint = filter;
