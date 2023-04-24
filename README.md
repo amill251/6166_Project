@@ -78,7 +78,7 @@ command: 'python(pyfile=<path_to_custom_script.py>)',
 
 #### Iteration 3:
 
-We have integrated a custom python script which contains various video filters like sepia that can be applied on the video application. The filters are applied successfully. We further need to run a model that detects the motion capture in our video application. We weren't succesfful in actually implementing the model this time , but we will ensure a working prototype for our next iteration.
+We have integrated a custom python script which contains pose decetion that can be applied on the video application. The pose detection is giving the desired results. We tried to integrate the pose detection python script code into our webtrc sever using GStreamer Filter pipleline. But, we were not able to view the pose detection via webrtc at the viewer server end and hence in our nrxt iteration we will try using streamlit webrtc.
 
 const filter = await pipeline.create('GStreamerFilter', {
       command: 'python(pyfile=</Users/hmoole/Downloads/CCN/Project/Iterations/6166_Project-group_5_iteration_2/pose.py>)',
