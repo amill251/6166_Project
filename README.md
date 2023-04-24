@@ -78,7 +78,7 @@ command: 'python(pyfile=<path_to_custom_script.py>)',
 
 #### Iteration 3:
 
-We have integrated a custom python script which contains pose decetion that can be applied on the video application. The pose detection is giving the desired results. We tried to integrate the pose detection python script code into our webtrc sever using GStreamer Filter pipleline. But, we were not able to view the pose detection via webrtc at the viewer server end and hence in our next iteration we will try using streamlit webrtc.
+We have integrated a custom python script which contains pose detection that can be applied on the video application. The pose detection is giving the desired results. We tried to integrate the pose detection python script code into our Kurento media sever using GStreamer. But, we were not able to view the pose detection results via webrtc at the viewer server end and hence in our next iteration we will try using streamlit webrtc.
 
 const filter = await pipeline.create('GStreamerFilter', {
       command: 'python(pyfile=</Users/hmoole/Downloads/CCN/Project/Iterations/6166_Project-group_5_iteration_2/pose.py>)',
