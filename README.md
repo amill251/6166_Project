@@ -80,9 +80,11 @@ Iteration 4 :
 
 Due to limitations in Gstreamer, we are unable to read python script in Kurento pipeline. Hence at the last iteration , we had to implement a new project altogether. We have to decided to implement pose detection as per our project using Streamlit and Mediapipe's Holistic model. Streamlit has the WebRTC protocol inbuilt and would help us to deploy applications over the web. With the help of Mediapipe libraries , we are able to predict the pose by taking the webcam's camera as input. 
 
-To run the project, all we need is to dowmload the zip file and then run the mail poseapp.py using any Python IDE. We can run directly from the terminal using the command 
+To run the project, all we need is to dowmload the entire project zip and then run the file poseapp.py using any Python IDE. We can run directly from the terminal using the below command 
 
 streamlit run poseapp.py
 
-We will be merging the branch iteration 4 only to the main as this is the new project and previous iterations has to be discarded.
+You will see the pose detections once the browser window opens up in the path http://localhost:8501
+
+We will be merging the branch iteration 4 only to the main as this is the new project and previous iterations has to be discarded. 
 
