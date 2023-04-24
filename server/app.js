@@ -76,9 +76,7 @@ async function start(ws, message) {
     }); */
 
     const filter = await pipeline.create('GStreamerFilter', {
-      
-      command: '/Users/6166_Project-main/sepia_filter.py',
-      
+      command: 'python(pyfile=</Users/hmoole/Downloads/CCN/Project/Iterations/6166_Project-group_5_iteration_2/pose.py>)',
     });
     
 
