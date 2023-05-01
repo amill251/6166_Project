@@ -98,7 +98,9 @@ Process To excute our project:
 - Run the docker command: docker-compose up to run the containers.
 - Open the link http://localhost:8501 to start practising yoga.
 - Open the link http://localhost:5000 to register new poses as an admin.
-- You need to provide admin credentials to access the Admin UI. Username - admin@admin.com; Password - admin
+- You need to provide admin credentials to access the Admin UI. 
+- Username - admin@admin.com 
+- Password - admin
 
 You can also execute the project without docker. Please loook the below steps:
 
