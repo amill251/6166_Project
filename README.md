@@ -83,11 +83,26 @@ const filter = await pipeline.create('GStreamerFilter', { command: 'python(pyfil
 
 Iteration 4 :
 
-Due to limitations in Gstreamer, we are unable to read python script in Kurento pipeline. Hence at the last iteration , we had to implement a new project altogether. We have to decided to implement pose detection as per our project using Streamlit and Mediapipe's Holistic model. Streamlit has the WebRTC protocol inbuilt and would help us to deploy applications over the web. With the help of Mediapipe libraries , we are able to predict the pose by taking the webcam's camera as input. 
+We attempted to execute several poses using Frankmocap on our system and aimed to integrate it with WebRTC. However, we encountered difficulties related to GPU support during the project's execution. Due to time constraints, we decided to develop an alternative project that does not necessitate access to a GPU. As a result, we created a yoga pose detector that is seamlessly integrated with Streamlit WebRTC, allowing users to practice yoga poses 
 
-To run the project, all we need is to dowmload the zip file and then run the mail poseapp.py using any Python IDE. We can run directly from the terminal using the command 
 
-streamlit run poseapp.py
+We have developed a yoga pose detection system using WebRTC and Streamlit, leveraging a pose estimation model like MediaPipe for real-time detection and analysis of body landmarks. By integrating WebRTC, we efficiently capture and preprocess users' video streams for pose detection. Our system analyzes detected poses, comparing them to ideal alignments, and provides real-time feedback through an intuitive Streamlit interface. This helps users adjust their posture and enhance their yoga practice. We also incorporated progress tracking features to motivate users and provide insights into their performance. The user-friendly and engaging interface allows easy navigation, making yoga practice accessible and enjoyable for all
 
-We will be merging the branch iteration 4 only to the main as this is the new project and previous iterations has to be discarded.
+
+Process To excute our project:
+
+Install Docker.
+Clone this repository.
+Open a terminal in the cloned directory.
+Run the docker command: docker-compose build to build all the containers.
+Run the docker command: docker-compose up to run the containers.
+Open the link http://localhost:8501 to start practising yoga.
+Open the link http://localhost:5000 to register new poses as an admin.
+
+You can also execute the project without docker. Please loook the below steps:
+
+Clone this repository.
+Open a terminal in the cloned directory.
+Run command: pip install -r requirements.txt
+Run streamlit run app.py
 
