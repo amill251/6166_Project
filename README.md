@@ -91,20 +91,18 @@ We have developed a yoga pose detection system using WebRTC and Streamlit, lever
 
 Process To excute our project:
 
--Install Docker.
-
--Clone this repository.
-
--Open a terminal in the cloned directory.
--Run the docker command: docker-compose build to build all the containers.
--Run the docker command: docker-compose up to run the containers.
--Open the link http://localhost:8501 to start practising yoga.
--Open the link http://localhost:5000 to register new poses as an admin.
+- Install Docker.
+- Clone this repository.
+- Open a terminal in the cloned directory.
+- Run the docker command: docker-compose build to build all the containers.
+- Run the docker command: docker-compose up to run the containers.
+- Open the link http://localhost:8501 to start practising yoga.
+- Open the link http://localhost:5000 to register new poses as an admin.
 
 You can also execute the project without docker. Please loook the below steps:
 
--Clone this repository.
--Open a terminal in the cloned directory.
--Run command: pip install -r requirements.txt
--Run streamlit run app.py
+- Clone this repository.
+- Open a terminal in the cloned directory.
+- Run command: pip install -r requirements.txt
+- Run streamlit run app.py
 
